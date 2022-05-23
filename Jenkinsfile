@@ -8,7 +8,7 @@ pipeline{
     }
     environment{
         
-        image_tag='docker.pkg.github.com/deeeeksha/cockpitapp/cockpitapp:${GIT_COMMIT}'
+        image_tag='mydockerimage:${GIT_COMMIT}'
         cred=credentials('dockerhub')
         
     }
